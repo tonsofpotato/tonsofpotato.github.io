@@ -12,17 +12,25 @@ const config = {
   properties: {
     collection: {
       type: 'string',
-      title: 'JSONData to be surfaced or displayed',
-      default: JSON.stringify([
-        {
-          "Name": "Andy",
-          "Company": "Nintex"
-        },
-        {
-          "Name": "Dan",
-          "Company": "Nintex"
-        }
-      ])
+      title: [
+
+{
+
+"Name": "Andy",
+
+"Company": "Nintex"
+
+},
+
+{
+
+"Name": "Dan",
+
+"Company": "Nintex"
+
+}
+
+]
     },
     value: {
       type: 'string',
