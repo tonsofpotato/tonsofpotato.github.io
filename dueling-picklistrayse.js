@@ -468,7 +468,7 @@ let DuelingPicklist = _decorate([e$1("dueling-picklistrayse")], function (_initi
     }
 
     .list {
-      width: 150px;
+      width: 300px;
       height: 200px;
       margin: 10px;
     }
