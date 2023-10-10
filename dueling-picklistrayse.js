@@ -425,7 +425,7 @@ const i=(i,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...e,
  */var n;null!=(null===(n=window.HTMLSlotElement)||void 0===n?void 0:n.prototype.assignedElements)?(o,n)=>o.assignedElements(n):(o,n)=>o.assignedNodes(n).filter((o=>o.nodeType===Node.ELEMENT_NODE));
 
 function convertItems(picklistoptions) {
-  const outputArray = picklistoptions.split(",");
+  const outputArray = picklistoptions.split(";");
   const htmlOptions = outputArray.map(item => y`<option value="${item}">${item}</option>`);
   return htmlOptions;
 }
@@ -513,7 +513,7 @@ let DuelingPicklist = _decorate([e$1("dueling-picklistrayse")], function (_initi
               type: "string",
               title: "Items",
               defaultValue: "Blue,Red,Yellow",
-              description: "Values must be comma delimeted without spaces. Ex: Blue,Red,Yellow"
+              description: "Values must be ; delimeted without spaces. Ex: Blue;Red;Yellow"
             }
           },
           events: ["ntx-value-change"]
@@ -577,7 +577,7 @@ let DuelingPicklist = _decorate([e$1("dueling-picklistrayse")], function (_initi
           return '';
         }
         const valuesArray = rightListOptions ? Array.from(rightListOptions).map(option => option.textContent) : [];
-        const commaDelimitedList = valuesArray.join(',');
+        const commaDelimitedList = valuesArray.join(';');
         return commaDelimitedList;
       }
     }]
