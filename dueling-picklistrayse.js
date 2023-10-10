@@ -577,7 +577,7 @@ let DuelingPicklist = _decorate([e$1("dueling-picklistrayse")], function (_initi
           return '';
         }
         const valuesArray = rightListOptions ? Array.from(rightListOptions).map(option => option.textContent) : [];
-        const commaDelimitedList = valuesArray.join(',');
+        const commaDelimitedList = valuesArray.join(';');
         return commaDelimitedList;
       }
     }]
