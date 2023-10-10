@@ -425,7 +425,7 @@ const i=(i,e)=>"method"===e.kind&&e.descriptor&&!("value"in e.descriptor)?{...e,
  */var n;null!=(null===(n=window.HTMLSlotElement)||void 0===n?void 0:n.prototype.assignedElements)?(o,n)=>o.assignedElements(n):(o,n)=>o.assignedNodes(n).filter((o=>o.nodeType===Node.ELEMENT_NODE));
 
 function convertItems(picklistoptions) {
-  const outputArray = picklistoptions.split(",");
+  const outputArray = picklistoptions.split(";");
   const htmlOptions = outputArray.map(item => y`<option value="${item}">${item}</option>`);
   return htmlOptions;
 }
